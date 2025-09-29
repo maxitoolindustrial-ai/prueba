@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Proteccion Ocular</title>|
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Proteccion Ocular</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const ProteccionOcular= ["Ocular-Gogleventilacionindirecta.png"
+        ,"Ocular-lentemicaclaraantiempanotricolor.png"
+        ,"ocular-lentesligerosantiempano.png" 
+        , "Ocular-lentessegdeportivos.png" 
+        , "Ocular-Micaparacabezal.png" 
+        , "Ocular-MicasInternasExternas.png" 
+        , "Ocular-Micatrasparente20x40.png" 
+        , "OcularCaretaSoldador.png" 
+        , "Ocular-CabezalPortavisorUniversal.png"];
+            const ruta= "../img/PRODUCTOS/ProteccionOcular/";
+            const galeria_ProteccionOcular = document.getElementById("imagen");
+            var i=0;
+            ProteccionOcular.forEach(src => {
+                const link_ProteccionOcular = document.createElement("a");
+                link_ProteccionOcular.href = "../sitio/sitio dinamico/sitio_a.html?ProteccionOcular="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_ProteccionOcular.appendChild(img);
+                galeria_ProteccionOcular.appendChild(link_ProteccionOcular);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

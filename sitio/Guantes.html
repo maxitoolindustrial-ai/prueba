@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Guantes</title>
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> Guantes</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const guantes= ["67-600-Dermacare.png",
+            "67-700-DermaCare-Negro.png"
+            ,"GUanteLatexEsterilAmbiderm.png"
+            , "GUante-92-600-Ansell.png"
+            , "GUANTEANTICORTEDERMA51-625.png"
+            , "GUanteArgoneroconelastico.png"
+            , "GUANTEJAPONESCPUNTOSPVC.png"
+            , "GUANTEJAPONESGRIS60gr.png"
+            , "GaunteHyflex-11-510.png"
+            , "GUanteOperador .png"
+            , "GUanteOperadorRES-Con-Cintillo.png"
+            , "GUantePoliestergris.png"
+            , "GUantePoliesterNegro.png"
+            , "GUantesDermaHuleNegro18in56-450.png"
+            , "GUantesJaponesPalmaLatexDerma.png"
+            , "GUantesNylonPoliesterNITRILOnegroDerma.png"
+            , "GUanteSoldadorAzul.png"
+            , "GUanteSoldadorRojo.png"
+            , "GUanteSolvex.png"
+            , "GUanteTerryBlanco.png"
+            ,"MangaAnricorte14in-16in.png"
+            ,"MangaCarnaza.png"
+            ,"MangasMezclilla.png"];
+            const ruta= "../img/PRODUCTOS/Guantes/";
+            const galeria_guantes = document.getElementById("imagen");
+            var i=0;
+            guantes.forEach(src => {
+                const link_guantes = document.createElement("a");
+                link_guantes.href = "../sitio/sitio dinamico/sitio_a.html?guantes="+i;
+                i++;
+                const img = document.createElement("img");
+                const texto= document.createElement("p");
+                img.src = ruta + src;
+                img.alt = src;
+                link_guantes.appendChild(img);
+                galeria_guantes.appendChild(link_guantes);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

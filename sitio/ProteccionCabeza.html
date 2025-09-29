@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Porteccion Cabeza</title>
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> Proteccion Cabeza</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const ProteccionCabeza= ["CABEZABARBIQUEOELASTICO.png"
+        , "CABEZACAPUCHAMEZCLILLA.png" 
+        , "CABEZACASCOALAANCHA.png" 
+        , "CABEZACASCOTIPOCACHUCHA.png"];
+            const ruta= "../img/PRODUCTOS/ProteccionCabeza/";
+            const galeria_ProteccionCabeza = document.getElementById("imagen");
+            var i=0;
+            ProteccionCabeza.forEach(src => {
+                const link_ProteccionCabeza = document.createElement("a");
+                link_ProteccionCabeza.href = "../sitio/sitio dinamico/sitio_a.html?ProteccionCabeza="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_ProteccionCabeza.appendChild(img);
+                galeria_ProteccionCabeza.appendChild(link_ProteccionCabeza);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

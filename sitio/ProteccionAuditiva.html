@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Proteccion Auditiva</title>|
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Proteccion Auditiva</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const ProteccionAuditiva= ["PauditivaOrejeraDiadema.png"
+        ,"PauditivaTapondesechable.png"
+        ,"PauditivaTaponSteelpro.png"
+        ,"PauditivaTaponUltrafit.png"];
+            const ruta= "../img/PRODUCTOS/ProteccionAuditiva/";
+            const galeria_ProteccionAuditiva = document.getElementById("imagen");
+            var i=0;
+            ProteccionAuditiva.forEach(src => {
+                const link_ProteccionAuditiva = document.createElement("a");
+                link_ProteccionAuditiva.href = "../sitio/sitio dinamico/sitio_a.html?ProteccionAuditiva="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_ProteccionAuditiva.appendChild(img);
+                galeria_ProteccionAuditiva.appendChild(link_ProteccionAuditiva);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

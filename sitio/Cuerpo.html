@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Proteccion Cuerpo</title>|
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Proteccion Cuerpo</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const ProteccionCuerpo= ["Corporal-ChalecoBrigadista.png"
+, "Corporal-Chalecomalla.png"
+, "Corporal-ChalecoPoliester.png"
+, "Corporal-Chaquetamezclilla.png"
+, "Corporal-Impermeablecapamanga.png"
+, "Corporal-Impermeabledospíezas.png"
+, "Corporal-Impermeablenaranja.png"
+, "Corporal-Mandilcarnaza.png"
+, "Corporal-MandilDesechable.png"
+, "Corporal-MandilMezclilla.png"
+, "Corporal-MandilPVC.png"
+, "Corporal-overaltyvek.png"];
+            const ruta= "../img/PRODUCTOS/ProteccionCuerpo/";
+            const galeria_ProteccionCuerpo = document.getElementById("imagen");
+            var i=0;
+            ProteccionCuerpo.forEach(src => {
+                const link_ProteccionCuerpo = document.createElement("a");
+                link_ProteccionCuerpo.href = "../sitio/sitio dinamico/sitio_a.html?ProteccionCuerpo="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_ProteccionCuerpo.appendChild(img);
+                galeria_ProteccionCuerpo.appendChild(link_ProteccionCuerpo);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

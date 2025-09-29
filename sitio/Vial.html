@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Proteccion Vial</title>|
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Proteccion Vial</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const ProteccionVial= ["Vial-Banderamallareflejante.png"
+, "Vial-Banderintriangular.png"
+, "Vial-Banderola.png"
+, "Vial-Cintaprecamarilla.png"
+, "Vial-Cintaprecroja.png"
+, "Vial-Cono.png"
+, "Vial-Cono1.png"
+, "Vial-Postesenalizacion.png"
+, "Vial-Rollomalla.png"
+, "Vial-Torretaambarconiman.png"
+, "Vial-Trafitambo.png"
+, "Vial-VailetaPlasticadoblereflejante.png"];
+            const ruta= "../img/PRODUCTOS/ProteccionVial/";
+            const galeria_ProteccionVial = document.getElementById("imagen");
+            var i=0;
+            ProteccionVial.forEach(src => {
+                const link_ProteccionVial = document.createElement("a");
+                link_ProteccionVial.href = "../sitio/sitio dinamico/sitio_a.html?ProteccionVial="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_ProteccionVial.appendChild(img);
+                galeria_ProteccionVial.appendChild(link_ProteccionVial);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

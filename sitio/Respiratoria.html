@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Proteccion Respiratoria</title>|
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Proteccion Respiratoria</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const ProteccionRespiratoria= ["Respiratori-Mediacaracondiafragmaparlante.png"
+, "Respiratoria-2700respiradornegro.png"
+, "Respiratoria-7700mascarillaaltorendimiento.png"
+, "Respiratoria-cubrebocaazul.png"
+, "Respiratoria-CubrebocasMayfield.png"
+, "Respiratoria-Mascarillagris.png"
+, "Respiratoria-MascarillaN95dermadesechable.png"
+, "Respiratoria-N95respiradorblancoBylack.png"];
+            const ruta= "../img/PRODUCTOS/ProteccionRespiratoria/";
+            const galeria_ProteccionRespiratoria = document.getElementById("imagen");
+            var i=0;
+            ProteccionRespiratoria.forEach(src => {
+                const link_ProteccionRespiratoria = document.createElement("a");
+                link_ProteccionRespiratoria.href = "../sitio/sitio dinamico/sitio_a.html?ProteccionRespiratoria="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_ProteccionRespiratoria.appendChild(img);
+                galeria_ProteccionRespiratoria.appendChild(link_ProteccionRespiratoria);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

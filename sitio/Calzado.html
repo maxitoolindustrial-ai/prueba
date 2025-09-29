@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Calzado</title>
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> Calzado</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const Calzado= ["CalzadoAtilaGrafeno.png"
+        , "CalzadoBorceguiBylack.png" 
+        , "CalzadoBotaIndustrialSanitariaBylack.png" 
+        , "CalzadoBotaJardineraCasquilloBylack.png" 
+        , "CalzadoCliffcafebumper.png" 
+        , "calzadocliffstrongnegro.png" 
+        , "CalzadodielectricoRetryver.png" 
+        , "CalzadodielectricoRetryverantiderrape.png" 
+        , "CALZADOTAMARA.png"];
+            const ruta= "../img/PRODUCTOS/Calzado/";
+            const galeria_Calzado = document.getElementById("imagen");
+            var i=0;
+            Calzado.forEach(src => {
+                const link_Calzado = document.createElement("a");
+                link_Calzado.href = "../sitio/sitio dinamico/sitio_a.html?calzado="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_Calzado.appendChild(img);
+                galeria_Calzado.appendChild(link_Calzado);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>

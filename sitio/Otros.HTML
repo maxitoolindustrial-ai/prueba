@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Otros</title>
+    <link rel="stylesheet" href="../estilo/productos.css">
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> Otros</h1>
+   <section id="imagen" class="img_productos"></section> 
+    <script>
+        const Otros= ["Otros-Indicadorpisomojado.png"
+, "Otros-PeliculaEstirable18in.png"
+, "Otros-Rafia1kg.png"
+, "Otros-Rafia4kg.png"];
+            const ruta= "../img/PRODUCTOS/Otros/";
+            const galeria_Otros = document.getElementById("imagen");
+            var i=0;
+            Otros.forEach(src => {
+                const link_Otros = document.createElement("a");
+                link_Otros.href = "../sitio/sitio dinamico/sitio_a.html?Otros="+i;
+                i++;
+                const img = document.createElement("img");
+                img.src = ruta + src;
+                img.alt = src;
+                link_Otros.appendChild(img);
+                galeria_Otros.appendChild(link_Otros);
+            });
+            i=0;
+    </script>
+</body>
+<footer></footer>
