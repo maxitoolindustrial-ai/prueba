@@ -1,0 +1,47 @@
+nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    nav ul li a{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    body{
+        
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        margin-top: auto;
+    }
+    nav ul li a:hover{
+        background: #ffffff;
+    }
+    #imagen{
+        padding: 1%;
+    }
+    .img_productos{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 5px;
+    }
+    
+    img{
+        width: 250px;
+        height: 250px;
+        transition: transform 0.25s;
+        border-color: #04025f;
+        border-radius:10%;
+        border-style:solid;
+    }
+    img:hover {
+        transform: scale(1.2);
+    }
+    h1{
+    font-size: 450%;
+    text-align: center;
+    color: #17335D;
+}
