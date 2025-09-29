@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Detalle Dinámico</title>
+<style>
+    img{
+        width: 500px;
+        height: 500px;
+        opacity: 0.95;
+        border:5px sienna;
+        transition: border-color 0.3s ease;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+                   
+    }
+        #contenido-texto {
+        white-space: pre-line; /* 👈 hace que \n se vean como saltos de línea */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2{
+        font-size: 250%;
+    text-align: center;
+    color: #17335D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p{font-size: 150%;
+    text-align: justify;
+    color: #17335D;
+    }
+</style>
+</head>
+<body>
+<img id="imagen" src="" alt="Imagen">
+<h2 id="titulo" ></h2>
+<p id="contenido-texto"></p>
+<script src="../../script/sitio_dinamico.js" defer></script>
+</body>
+</html>
